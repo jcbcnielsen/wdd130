@@ -1,0 +1,50 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
+}
+
+p {
+    padding: 0;
+}
+
+main {
+    max-width: 1000px;
+}
+
+aside {
+    max-width: 400px;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: rgba(240, 240, 255, .7);
+    color: gold;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 3rem;
+    border-top: 1px dotted black;
+    text-align: center;
+}
