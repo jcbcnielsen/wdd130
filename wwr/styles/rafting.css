@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #1b98e0;
+    --accent1-color: #434343;
+    --accent2-color: #659157;
+    --heading-font: 'Sarala', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+body {
+    max-width: 1024px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font)
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+}
+
+div {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div h1 {
+    position: absolute;
+    top: 16px;
+    left: 48px;
+}
+
+div article {
+    position: absolute;
+    top: 300px;
+    right: 36px;
+    background-color: rgba(256, 256, 256, 0.7);
+}
+
+article img {
+    max-width: 300px;
+    float: right;
+}
+
+article p {
+    margin: 1rem;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
