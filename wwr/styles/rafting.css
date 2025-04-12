@@ -3,8 +3,12 @@
     --secondary-color: #1b98e0;
     --accent1-color: #434343;
     --accent2-color: #659157;
-    --heading-font: 'Sarala', sans-serif;
-    --text-font: 'Open Sans', sans-serif;
+    --heading-font: "Sarala", sans-serif;
+    --text-font: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -63,94 +67,9 @@ header img {
 
 .sitelinks a {
     color: var(--accent2-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-decoration: none;
-}
-
-/* HERO IMAGE */
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 16px;
-    left: 48px;
-}
-
-.hero article {
-    position: absolute;
-    top: 300px;
-    right: 36px;
-    background-color: rgba(256, 256, 256, 0.7);
-}
-
-article img {
-    max-width: 300px;
-    float: right;
-}
-
-article p {
-    margin: 1rem;
-}
-
-/* HISTORY */
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 5fr;
-}
-
-.history h2 {
-    grid-column: 1/4;
-}
-
-.history img {
-    max-width: 300px;
-    height: auto;
-    margin: auto;
-}
-
-.history p {
-    margin: 1rem;
-}
-
-/* ADVENTURE */
-
-.adventure {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 2fr 5fr;
-}
-
-.adventure h2 {
-    grid-column: 1/6;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-figure img {
-    max-width: 200px;
-    height: auto;
-}
-
-figcaption {
-    font-family: var(--text-font);
-    color: var(--accent1-color);
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 /* FOOTER */
@@ -180,4 +99,191 @@ footer p {
     max-width: 48px;
     height: auto;
     margin: auto;
+}
+
+/* ABOUT US - HERO IMAGE */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 16px;
+    left: 48px;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    background-color: color(from var(--accent2-color) srgb r g b / .7);
+}
+
+.hero article {
+    position: absolute;
+    top: 300px;
+    right: 36px;
+    border-radius: 1rem;
+    background-color: color(from var(--primary-color) srgb r g b / .7);
+}
+
+.hero article img {
+    max-width: 300px;
+    float: right;
+}
+
+.hero article p {
+    margin: 1rem;
+}
+
+/* ABOUT US - HISTORY */
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+.history h2 {
+    grid-column: 1/4;
+}
+
+.history img {
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+.history p {
+    margin: 1rem;
+}
+
+/* ABOUT US - ADVENTURE */
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr 5fr;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+}
+
+.adventure figure {
+    margin: 0;
+    padding: 0;
+}
+
+.adventure figure img {
+    max-width: 200px;
+    height: auto;
+}
+
+.adventure figcaption {
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* CONTACT US - MAP */
+
+.map {
+    background-color: color(from var(--secondary-color) srgb r g b / .05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+.map iframe {
+    width: 512px;
+    height: 341px;
+    grid-row: 1/4;
+}
+
+.map p {
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 3rem;
+}
+
+/* CONTACT US - TEAM */
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.team h2 {
+    grid-column: 1/4;
+}
+
+.team figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team img {
+    max-width: 128px;
+    height: auto;
+}
+
+.team figcaption {
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+}
+
+/* CONTACT US - FORM */
+
+.contact fieldset {
+    max-width: 480px;
+    margin: 1em auto;
+    border-radius: 1rem;
+    display: grid;
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+    background-color: color(from var(--secondary-color) srgb r g b / .05);
+}
+
+.column1 {
+    text-align: right;
+    padding-right: 7rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+.column2 {
+    padding-left: 7rem;
+    grid-template-columns: 1fr 5fr;
+}
+
+.contact p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+label[for="message"] {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.column3 {
+    margin: 1rem auto;
+}
+
+.contact button {
+    width: 240px;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
 }

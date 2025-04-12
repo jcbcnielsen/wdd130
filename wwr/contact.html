@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rafting Company | Contact Us</title>
+    <meta name="description" content="Reach out to contact our company">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-raftingbw.png" alt="Company Logo">
+        <nav class="sitelinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.8114024960687!2d-111.78510162349953!3d43.81827124173846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540bdb747be8e9%3A0x4bb8b6eccf613b73!2sBYU-Idaho!5e0!3m2!1sen!2sus!4v1744481176373!5m2!1sen!2sus" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <p>142 S 2nd E, Rexburg, ID 83460</p>
+             <p>(555) 123 - 4567</p>
+             <p>contact@rafting.com</p>
+        </div>
+
+        <section class="team">
+            <h2>Our Team</h2>
+            <figure>
+                <img src="images/rafting60_joseph.jpg" alt="">
+                <figcaption>Joseph Jones, Owner</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting10_jessie.jpg" alt="">
+                <figcaption>Jessie Jacobson, Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting27_james.jpg" alt="">
+                <figcaption>James Johnson, Safety Captain</figcaption>
+            </figure>
+        </section>
+
+        <form class="contact">
+            <fieldset>
+                <legend>Send Us a Message</legend>
+                <div class="column1">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="column1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <p>What are you messaging us for?</p>
+                <div class="column2">
+                    <input type="radio" id="inquiry" name="purpose" value="inquiry">
+                    <label for="inquiry">General Inquiry</label>
+                </div>
+                <div class="column2">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div class="column2">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <div class="column3">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | The Rafting Company | Jacob Nielsen<br><a href="https://wireframe.cc/cjFlhS">Wireframe</a></p>
+        <nav class="sociallinks">
+            <a href="facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="x.com"><img src="images/xtwitter.svg" alt="X / Twitter"></a>
+            <a href="instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
