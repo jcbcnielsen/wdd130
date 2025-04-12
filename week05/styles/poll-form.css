@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: white;
+}
+
+header {
+    margin: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 480px;
+    margin: auto;
+    border: 3px solid darkblue;
+    border-radius: 1em;
+    padding: .5em;
+    background-color: color(from lightblue srgb r g b / .3);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    justify-content: center;
+    grid-gap: .25em;
+    padding-bottom: .5em;
+}
+
+legend {
+    font-size: large;
+    padding: .5em;
+}
+
+label {
+    text-align: right;
+    padding-right: .5em;
+}
+
+label[for="feedback"] {
+    margin-top: .5em;
+    text-align: center;
+}
+
+input, select, textarea {
+    padding: .25em;
+    font-size: 1.1em;
+}
+
+textarea {
+    margin: 0 1em 1em 1em;
+}
+
+input[type="checkbox"] {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: bottom;
+}
+
+button {
+    margin: .5em auto;
+    max-width: 120px;
+    padding: .25em;
+    border-radius: .5em;
+    font-size: 1.25em;
+}
+
+button:hover {
+    background-color: color(from darkgrey srgb r g b / .7);
+}
+
+footer {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5em 1em;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
