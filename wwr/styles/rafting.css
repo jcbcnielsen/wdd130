@@ -12,16 +12,16 @@
 }
 
 body {
-    max-width: 1024px;
+    max-width: 1000px;
     margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2 {
     font-family: var(--heading-font)
 }
 
 h1 {
-    color: var(--primary-color);
     font-size: 2.8rem;
 }
 
@@ -101,7 +101,7 @@ footer p {
     margin: auto;
 }
 
-/* ABOUT US - HERO IMAGE */
+/* HOME & ABOUT - HERO IMAGE */
 
 .hero {
     position: relative;
@@ -113,12 +113,24 @@ footer p {
     height: auto;
 }
 
+.hero message {
+    position: absolute;
+    top: 260px;
+    left: 60px;
+    max-width: 40%;
+    border: .5rem solid var(--accent2-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: color(from var(--primary-color) srgb r g b / .7);
+}
+
 .hero h1 {
     position: absolute;
     top: 16px;
     left: 48px;
     border-radius: 1rem;
     padding: 0 1rem;
+    color: var(--primary-color);
     background-color: color(from var(--accent2-color) srgb r g b / .7);
 }
 
@@ -137,6 +149,92 @@ footer p {
 
 .hero article p {
     margin: 1rem;
+}
+
+.double {
+    display: flex;
+}
+
+/* HOME - FORM */
+
+.double form {
+    flex: 7;
+}
+
+.letter fieldset {
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+}
+
+.letter h1 {
+    color: var(--accent1-color);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.letter label {
+    margin: 1rem;
+    text-align: center;
+}
+
+.letter button {
+    margin: 1rem;
+    width: 240px;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/* HOME - LINK TO TRIPS */
+
+.triplink {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: color(from var(--secondary-color) srgb r g b / .05);
+}
+
+.triplink img {
+    padding: 0;
+    max-width: 300;
+    height: auto;
+    flex: 1;
+}
+
+.triplink a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 6rem;
+    flex: 3;
+}
+
+/* HOME - OFFERINGS */
+
+.offerings {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: color(from var(--secondary-color) srgb r g b / .05);
+    align-items: center;
+}
+
+.offerings p {
+    grid-column: span 3;
+    padding: 3rem;
+}
+
+.offerings img {
+    grid-column: span 2;
+    max-width: 400px;
+    height: auto;
 }
 
 /* ABOUT US - HISTORY */
@@ -189,6 +287,96 @@ footer p {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+/* TRIPS - DETAILED DESCRIPTIONS */
+
+.tripbig {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: color(from var(--secondary-color) srgb r g b / .05);
+}
+
+.tripbig div {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tripbig h1, .tripbig p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.tripbig h1 {
+    color: var(--accent2-color);
+}
+
+.tripbig img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* TRIPS - TABLE AND CONTACT LINK */
+
+.tripdetail {
+    display: flex;
+}
+
+.tripdetail table {
+    flex: auto;
+    margin: 1rem;
+    border-collapse: collapse;
+    border: 2px solid var(--accent2-color);
+    font-family: "Sarala";
+    color: var(--accent1-color);
+}
+
+.tripdetail caption {
+    caption-side: bottom;
+    text-align: left;
+}
+
+.tripdetail thead {
+    background-color: color(from var(--secondary-color) srgb r g b / .3);
+}
+
+.tripdetail tbody > tr:nth-of-type(even) {
+    background-color: color(from var(--secondary-color) srgb r g b / .1);
+}
+
+.tripdetail th, .tripdetail td {
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+    padding: 0 1rem;
+}
+
+.tripdetail div {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.tripdetail h1 {
+    text-align: center;
+    color: var(--accent2-color);
+}
+
+.tripdetail a {
+    margin: 1rem;
+    border: .5rem solid color(from var(--secondary-color) srgb r g b / .3);
+    border-radius: 1rem;
+    background-color: color(from var(--secondary-color) srgb r g b / .1);
+    padding: 1rem;
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* CONTACT US - MAP */
