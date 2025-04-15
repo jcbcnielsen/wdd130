@@ -113,7 +113,7 @@ footer p {
     height: auto;
 }
 
-.hero message {
+.hero section {
     position: absolute;
     top: 260px;
     left: 60px;
@@ -202,7 +202,7 @@ footer p {
 
 .triplink img {
     padding: 0;
-    max-width: 300;
+    max-width: 300px;
     height: auto;
     flex: 1;
 }
@@ -306,7 +306,8 @@ footer p {
     align-items: center;
 }
 
-.tripbig h1, .tripbig p {
+.tripbig h1,
+.tripbig p {
     margin: 0;
     padding: 1rem;
 }
@@ -344,11 +345,12 @@ footer p {
     background-color: color(from var(--secondary-color) srgb r g b / .3);
 }
 
-.tripdetail tbody > tr:nth-of-type(even) {
+.tripdetail tbody>tr:nth-of-type(even) {
     background-color: color(from var(--secondary-color) srgb r g b / .1);
 }
 
-.tripdetail th, .tripdetail td {
+.tripdetail th,
+.tripdetail td {
     text-align: center;
     border: 1px solid var(--accent1-color);
     padding: 0 1rem;
@@ -385,21 +387,31 @@ footer p {
     background-color: color(from var(--secondary-color) srgb r g b / .05);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     align-items: center;
 }
 
 .map iframe {
+    border: 0;
     width: 512px;
     height: 341px;
-    grid-row: 1/4;
+    grid-row: 1/5;
+}
+
+.map h1 {
+    color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .map p {
+    margin: 0;
+    padding: 0;
     color: var(--accent2-color);
     font-size: 1.5rem;
     font-weight: 500;
-    padding-left: 3rem;
+    text-align: center;
 }
 
 /* CONTACT US - TEAM */
